@@ -2,8 +2,8 @@
 #include <windows.h>
 void SlowPrint(char* string, int sleeptime)
 {
-	int i=0;
-	while(string[i]!='\0')
+	int i = 0;
+	while(string[i] != '\0')
 	{
 		printf("%c",string[i]);
 		Sleep(sleeptime);
@@ -12,15 +12,15 @@ void SlowPrint(char* string, int sleeptime)
  } 
  int main()
  {
- 	int a=0;
+ 	int a = 0;
 	do
 	{
-		SlowPrint("~~~~~~~~~~~~~~ ±ø÷Ì÷Ì ~~~~~~~~~~~~~~\n", 10);
+		SlowPrint("~~~~~~~~~~~~~~ Hello, World. ~~~~~~~~~~~~~~\n", 10);
 		printf("\n");
 		Sleep(200);
 		a++;
 	}
-	while (a != 10);
-	printf("
+	while (a != 5);
+	printf("Test the end\n");
 	return 0;
  }
