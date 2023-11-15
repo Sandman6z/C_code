@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
+
 void SlowPrint(char* string, int sleeptime)
 {
 	int i = 0;
@@ -11,16 +12,16 @@ void SlowPrint(char* string, int sleeptime)
 	}
  } 
  int main()
- {
+ {   
  	int a = 0;
 	do
 	{
-		SlowPrint("~~~~~~~~~~~~~~ Hello, World. ~~~~~~~~~~~~~~\n", 10);
+		SlowPrint("~~~~~~~~~~~~~~ Hello, World. ~~~~~~~~~~~~~~\n", 30);
 		printf("\n");
-		Sleep(200);
+		Sleep(2);
 		a++;
 	}
 	while (a != 5);
-	printf("Test the end\n");
+	
 	return 0;
  }
